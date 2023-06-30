@@ -1,0 +1,10 @@
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: self-start;
+}
+
+.input {
+    margin: 10px 0px;
+}

@@ -8,6 +8,8 @@ import { UserListComponent } from './user-list/user-list.component';
 import { StudentListComponent } from './student-list/student-list.component';
 import { CountryListComponent } from './country-list/country-list.component';
 
+import { StudentAuthModule } from './student-auth/student-auth.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,8 @@ import { CountryListComponent } from './country-list/country-list.component';
     CountryListComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    StudentAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

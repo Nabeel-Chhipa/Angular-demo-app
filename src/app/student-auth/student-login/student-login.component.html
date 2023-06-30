@@ -1,0 +1,13 @@
+<p>student-login works!</p>
+<div class="mainWrapper">
+    <button (click)="getData('hello')">Click</button>
+    <label>Name</label>
+    <input  class='input' type="text" #name placeholder="Event keyup" (keyup)="getData(name.value)" />
+    <label>Country</label>
+    <input  class='input' type="text" #country placeholder="Event keydown" (keydown)="getData(country.value)" />
+    <label>City</label>
+    <input  class='input' type="text" #city placeholder="Event blur" (blur)="getData(city.value)" />
+
+    <h3 (mouseover)="getData('Mouseover event called.')">Mouseover</h3>
+    <h3 (mouseleave)="getData('Mouseleave event called.')">Mouseleave</h3>
+</div>
