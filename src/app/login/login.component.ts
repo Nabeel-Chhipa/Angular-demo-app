@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  message = 'Message from Login component .ts file'
+  message = 'Message from Login component .ts file';
+  userName: string = '';
+  getUserData(name: string) {
+    this.userName = name
+  }
 }

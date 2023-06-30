@@ -8,7 +8,7 @@ import { UserListComponent } from './user-list/user-list.component';
 import { StudentListComponent } from './student-list/student-list.component';
 import { CountryListComponent } from './country-list/country-list.component';
 
-import { StudentAuthModule } from './student-auth/student-auth.module';
+// import { StudentAuthModule } from './student-auth/student-auth.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { StudentAuthModule } from './student-auth/student-auth.module';
   ],
   imports: [
     BrowserModule,
-    StudentAuthModule
+    // StudentAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
