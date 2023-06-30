@@ -7,6 +7,7 @@ import { RegisterComponent } from './register/register.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { StudentListComponent } from './student-list/student-list.component';
 import { CountryListComponent } from './country-list/country-list.component';
+import { CounterComponent } from './counter/counter.component';
 
 // import { StudentAuthModule } from './student-auth/student-auth.module';
 
@@ -18,6 +19,7 @@ import { CountryListComponent } from './country-list/country-list.component';
     UserListComponent,
     StudentListComponent,
     CountryListComponent,
+    CounterComponent,
   ],
   imports: [
     BrowserModule,
