@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
-
+  title: string = 'Register Component';
+  // show: boolean = true;
+  userName: string = 'Nabeel'
 }

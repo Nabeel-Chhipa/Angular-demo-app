@@ -1,1 +1,15 @@
-<p>register works!</p>
+<p>{{title}}</p>
+<!-- <h1 *ngIf="userName==='Nabeel'; then ifBlock else elseBlock"></h1>
+<ng-template #ifBlock>
+    <p>True block</p>
+</ng-template>
+<ng-template #elseBlock>
+    <p>False Block</p>
+</ng-template> -->
+
+<ng-template #ifOne [ngIf]="userName === 'Nabeel'">
+    <p>Welcome {{userName}}</p>
+</ng-template>
+<ng-template [ngIf]="userName === 'Usama'">
+    <p>Welcome {{userName}}</p>
+</ng-template>
