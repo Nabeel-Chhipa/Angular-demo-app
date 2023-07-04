@@ -10,6 +10,8 @@ import { CountryListComponent } from './country-list/country-list.component';
 import { CounterComponent } from './counter/counter.component';
 import { HeaderComponent } from './header/header.component';
 
+import {FormsModule} from '@angular/forms'
+
 // import { StudentAuthModule } from './student-auth/student-auth.module';
 
 @NgModule({
@@ -25,7 +27,8 @@ import { HeaderComponent } from './header/header.component';
   ],
   imports: [
     BrowserModule,
-    // StudentAuthModule
+    // StudentAuthModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

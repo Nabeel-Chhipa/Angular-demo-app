@@ -1,4 +1,4 @@
-<p>{{title}}</p>
+<!-- <p>{{title}}</p> -->
 <!-- <h1 *ngIf="userName==='Nabeel'; then ifBlock else elseBlock"></h1>
 <ng-template #ifBlock>
     <p>True block</p>
@@ -14,8 +14,29 @@
     <p>Welcome {{userName}}</p>
 </ng-template> -->
 
-<div [ngSwitch]="color">
+<!-- <div [ngSwitch]="color">
     <h1 *ngSwitchCase="'red'" style="color: red;">{{color}} color</h1>
     <h1 *ngSwitchCase="'green'" style="color: green;">{{color}} color</h1>
     <h1 *ngSwitchDefault>{{color}} color was not found</h1>
+</div> -->
+
+<div>
+    <h2>Register</h2>
+    <form #registrationForm="ngForm" (submit)="getData(registrationForm.value)">
+        <input type="text" ngModel name="user" placeholder="Enter User Name">
+        <br /> <br />
+        <input type="email" ngModel name="email" placeholder="Enter Email">
+        <br /> <br />
+        <input type="password" ngModel name="password" placeholder="Enter Password">
+        <br /> <br />
+        <button>Register</button>
+    </form>
+</div>
+
+<div>
+    <h3>User Data</h3>
+    <ul>
+        <li>userName: {{userData.user}}</li>
+        <li>email: {{userData.email}}</li>
+    </ul>
 </div>
