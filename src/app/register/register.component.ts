@@ -17,4 +17,8 @@ export class RegisterComponent {
     console.log(data)
     this.userData = data
   }
+  isVisible:boolean = false
+  toggleData() {
+    this.isVisible = !this.isVisible
+  }
 }

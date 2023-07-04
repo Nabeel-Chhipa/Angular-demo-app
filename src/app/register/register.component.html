@@ -32,8 +32,9 @@
         <button>Register</button>
     </form>
 </div>
-
-<div>
+<br /><br />
+<button (click)="toggleData()">Toggle User Data</button>
+<div *ngIf="isVisible">
     <h3>User Data</h3>
     <ul>
         <li>userName: {{userData.user}}</li>
