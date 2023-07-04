@@ -6,7 +6,7 @@
 <p *ngFor="let item of userDetails">Name: {{item.name}}, Email: {{item.email}}, country: {{item.country}}, city: {{item.city}}</p> -->
 
 
-<h2>User Detail</h2>
+<!-- <h2>User Detail</h2>
 
 <ul *ngFor="let user of userDetail">
     <li>Name: {{user.name}}</li>
@@ -14,4 +14,7 @@
     <ul *ngFor="let accounts of user.socialAccounts">
         <li>{{accounts.name}}</li>
     </ul>
-</ul>
+</ul> -->
+
+<h2 [style.color]="color" [style.backgroundColor]="backgroundColor" [style.fontSize]="fs">{{color}}</h2>
+<button (click)="changeColor()">Change color</button>

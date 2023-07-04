@@ -27,36 +27,45 @@ export class UserListComponent {
   //   {name: 'Zariyab', email: 'zariyab@gmail.com', country: 'Pakistan', city: 'Faisalabad'},
   // ]
 
-  userDetail = [
-    {
-      name: 'Nabeel',
-      email: 'nabeel@gmail.com',
-      socialAccounts: [
-        {name: 'LinkedIn'},
-        {name: 'Facebook'},
-        {name: 'Instagram'},
-        {name: 'Youtube'},
-      ]
-    },
-    {
-      name: 'Usama',
-      email: 'usama@gmail.com',
-      socialAccounts: [
-        {name: 'Instagram'},
-        {name: 'Facebook'},
-        {name: 'Youtube'},
-        {name: 'LinkedIn'},
-      ]
-    },
-    {
-      name: 'Saad',
-      email: 'saad@gmail.com',
-      socialAccounts: [
-        {name: 'Youtube'},
-        {name: 'LinkedIn'},
-        {name: 'Instagram'},
-        {name: 'Facebook'},
-      ]
-    }
-  ]
+  // userDetail = [
+  //   {
+  //     name: 'Nabeel',
+  //     email: 'nabeel@gmail.com',
+  //     socialAccounts: [
+  //       {name: 'LinkedIn'},
+  //       {name: 'Facebook'},
+  //       {name: 'Instagram'},
+  //       {name: 'Youtube'},
+  //     ]
+  //   },
+  //   {
+  //     name: 'Usama',
+  //     email: 'usama@gmail.com',
+  //     socialAccounts: [
+  //       {name: 'Instagram'},
+  //       {name: 'Facebook'},
+  //       {name: 'Youtube'},
+  //       {name: 'LinkedIn'},
+  //     ]
+  //   },
+  //   {
+  //     name: 'Saad',
+  //     email: 'saad@gmail.com',
+  //     socialAccounts: [
+  //       {name: 'Youtube'},
+  //       {name: 'LinkedIn'},
+  //       {name: 'Instagram'},
+  //       {name: 'Facebook'},
+  //     ]
+  //   }
+  // ]
+
+  color: string = 'white'
+  backgroundColor: string = 'black'
+  fs = '20px'
+  changeColor() {
+    this.color = 'black'
+    this.backgroundColor = 'lightgray'
+    this.fs = '30px'
+  }
 }
