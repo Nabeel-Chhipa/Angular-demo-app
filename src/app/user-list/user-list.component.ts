@@ -12,5 +12,51 @@ import { Component } from '@angular/core';
   ]
 })
 export class UserListComponent {
+  // users = [
+  //   'Nabeel',
+  //   'Usama',
+  //   'Saad',
+  //   'Zain',
+  //   'Zariyab'
+  // ];
+  // userDetails = [
+  //   {name: 'Nabeel', email: 'nabeel@gmail.com', country: 'Pakistan', city: 'Karachi'},
+  //   {name: 'Usama', email: 'usama@gmail.com', country: 'Pakistan', city: 'Lahore'},
+  //   {name: 'Saad', email: 'saad@gmail.com', country: 'Pakistan', city: 'Islamabad'},
+  //   {name: 'Zain', email: 'zain@gmail.com', country: 'Pakistan', city: 'Multan'},
+  //   {name: 'Zariyab', email: 'zariyab@gmail.com', country: 'Pakistan', city: 'Faisalabad'},
+  // ]
 
+  userDetail = [
+    {
+      name: 'Nabeel',
+      email: 'nabeel@gmail.com',
+      socialAccounts: [
+        {name: 'LinkedIn'},
+        {name: 'Facebook'},
+        {name: 'Instagram'},
+        {name: 'Youtube'},
+      ]
+    },
+    {
+      name: 'Usama',
+      email: 'usama@gmail.com',
+      socialAccounts: [
+        {name: 'Instagram'},
+        {name: 'Facebook'},
+        {name: 'Youtube'},
+        {name: 'LinkedIn'},
+      ]
+    },
+    {
+      name: 'Saad',
+      email: 'saad@gmail.com',
+      socialAccounts: [
+        {name: 'Youtube'},
+        {name: 'LinkedIn'},
+        {name: 'Instagram'},
+        {name: 'Facebook'},
+      ]
+    }
+  ]
 }
