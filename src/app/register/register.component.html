@@ -7,9 +7,15 @@
     <p>False Block</p>
 </ng-template> -->
 
-<ng-template #ifOne [ngIf]="userName === 'Nabeel'">
+<!-- <ng-template #ifOne [ngIf]="userName === 'Nabeel'">
     <p>Welcome {{userName}}</p>
 </ng-template>
 <ng-template [ngIf]="userName === 'Usama'">
     <p>Welcome {{userName}}</p>
-</ng-template>
+</ng-template> -->
+
+<div [ngSwitch]="color">
+    <h1 *ngSwitchCase="'red'" style="color: red;">{{color}} color</h1>
+    <h1 *ngSwitchCase="'green'" style="color: green;">{{color}} color</h1>
+    <h1 *ngSwitchDefault>{{color}} color was not found</h1>
+</div>
