@@ -10,7 +10,8 @@ import { CountryListComponent } from './country-list/country-list.component';
 import { CounterComponent } from './counter/counter.component';
 import { HeaderComponent } from './header/header.component';
 
-import {FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms';
+import { TodoComponent } from './todo/todo.component'
 
 // import { StudentAuthModule } from './student-auth/student-auth.module';
 
@@ -24,6 +25,7 @@ import {FormsModule} from '@angular/forms'
     CountryListComponent,
     CounterComponent,
     HeaderComponent,
+    TodoComponent,
   ],
   imports: [
     BrowserModule,
