@@ -11,7 +11,8 @@ import { CounterComponent } from './counter/counter.component';
 import { HeaderComponent } from './header/header.component';
 
 import {FormsModule} from '@angular/forms';
-import { TodoComponent } from './todo/todo.component'
+import { TodoComponent } from './todo/todo.component';
+import { ChildComponent } from './child/child.component'
 
 // import { StudentAuthModule } from './student-auth/student-auth.module';
 
@@ -26,6 +27,7 @@ import { TodoComponent } from './todo/todo.component'
     CounterComponent,
     HeaderComponent,
     TodoComponent,
+    ChildComponent,
   ],
   imports: [
     BrowserModule,
