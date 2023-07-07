@@ -16,5 +16,9 @@
 <!-- TODO COMPONENT -->
 
 <!-- <app-todo></app-todo> -->
-<app-child [item]="data"></app-child>
-<button (click)="updateData()">Update Data</button>
+<!-- <app-child [item]="data"></app-child>
+<button (click)="updateData()">Update Data</button> -->
+
+<ul *ngFor="let user of userDetails">
+    <app-user-details [item]="user"></app-user-details>
+</ul>
